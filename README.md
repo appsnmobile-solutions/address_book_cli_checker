@@ -1,43 +1,104 @@
 # AddressBookCliChecker
 
-TODO: Delete this and the text below, and describe your gem
+**AddressBookCliChecker** is a CLI tool for validating the user interface (UI) flow of Ruby-based command-line address book applications. It runs automated RSpec tests against your app to ensure the user experience follows a predictable, guided pattern.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/address_book_cli_checker`. To experiment with that code, run `bin/console` for an interactive prompt.
+---
 
-## Installation
+## ✨ Features
+- Validates user interface flows of address book CLI apps
+- Detects UI mismatches automatically
+- Runs with a simple terminal command
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+---
 
-Install the gem and add to the application's Gemfile by executing:
+## 📦 Installation
 
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'address_book_cli_checker', git: 'https://github.com/appsnmobile-solutions/address_book_cli_checker'
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Then execute:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle install
 ```
 
-## Usage
+Or install it directly with:
 
-TODO: Write usage instructions here
+```bash
+gem install specific_gem_file.gem  # or use 'rake install' from the cloned repo
+```
 
-## Development
+---
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## 🚀 Usage
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To use the checker on your Ruby CLI address book app:
 
-## Contributing
+```bash
+address_book_cli_checker path/to/your_script.rb
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/address_book_cli_checker. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/address_book_cli_checker/blob/master/CODE_OF_CONDUCT.md).
+The gem will execute your app and validate whether the UI screens match the expectations defined in the **UI Flow Guide** below.
 
-## License
+---
+
+📒 UI Flow Guide
+
+This guide defines how your CLI should behave in various scenarios. Your app must match this structure for validation to pass.
+See the full [Address Book UI Flow Guide](UI_GUIDE.md).
+
+---
+
+## 🔧 Development
+
+After cloning:
+```bash
+git clone https://github.com/appsnmobile-solutions/address_book_cli_checker.git
+cd address_book_cli_checker
+bundle install
+```
+
+Run tests:
+```bash
+rake spec
+```
+
+Interactive console:
+```bash
+bin/console
+```
+
+Install locally:
+```bash
+bundle exec rake install
+```
+
+Release new version:
+1. Update `version.rb`
+2. Run:
+```bash
+bundle exec rake release
+```
+
+---
+
+## 🤝 Contributing
+
+Bug reports and pull requests are welcome on GitHub at:
+[https://github.com/appsnmobile-solutions/address_book_cli_checker](https://github.com/appsnmobile-solutions/address_book_cli_checker)
+
+---
+
+## 🧾 License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
+---
 
-Everyone interacting in the AddressBookCliChecker project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/address_book_cli_checker/blob/master/CODE_OF_CONDUCT.md).
+## 🧭 Code of Conduct
+
+Everyone interacting in this project’s codebases, issue trackers, and community spaces is expected to follow the [Code of Conduct](https://github.com/appsnmobile-solutions/address_book_cli_checker/blob/main/CODE_OF_CONDUCT.md).
+

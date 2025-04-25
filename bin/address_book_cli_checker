@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "address_book_cli_checker"
+
+path = ARGV[0]
+unless path && File.exist?(path)
+  puts "Usage: address_book_cli_checker path/to/main.rb"
+  exit 1
+end
+
+AddressBookCliChecker::Runner.run(path)
