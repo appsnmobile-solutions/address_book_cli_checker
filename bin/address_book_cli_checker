@@ -9,4 +9,12 @@ unless path && File.exist?(path)
   exit 1
 end
 
-AddressBookCliChecker::Runner.run(path)
+# Expand relative path to absolute
+absolute_path = File.expand_path(path)
+
+unless File.exist?(absolute_path)
+  puts "File not found: #{absolute_path}"
+  exit 1
+end
+
+AddressBookCliChecker::Runner.run(absolute_path)
