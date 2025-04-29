@@ -172,8 +172,8 @@ Returns to main.
 
 ## 📌 Notes for Developers
 
-- The application entry/start point should be defined in a `main function`.
-- Do not call/execute the `main function` in your script when using the checker.
+- The application entry/start point should be defined in a function called `main`.
+- Do not call/execute the `main` function in your script when using the checker.
 - Every view must **clearly guide the user** with prompts and instructions.
 - After each action (add/edit/delete/view), return to the **main menu**.
 - Inputs must always prompt with descriptive text (e.g. `"Enter Last Name:"`).
