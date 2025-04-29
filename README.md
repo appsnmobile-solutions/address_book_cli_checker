@@ -28,7 +28,7 @@ bundle install
 Or install it directly with:
 
 ```bash
-gem install specific_gem_file.gem  # or use 'rake install' from the cloned repo
+gem install 'address_book_cli_checker', git: 'https://github.com/appsnmobile-solutions/address_book_cli_checker'
 ```
 
 ---
