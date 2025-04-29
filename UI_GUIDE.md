@@ -136,7 +136,7 @@ Are you sure you want to delete "Kofi Doe"? (y/n):
 ### **Success Message**
 If choice is 'y':
 ```
-🗑 Contact deleted.
+Contact deleted.
 ```
 
 ### **Delete Cancellation Message**
@@ -172,7 +172,8 @@ Returns to main.
 
 ## 📌 Notes for Developers
 
-- The application entry should be defined in a `main function`.
+- The application entry/start point should be defined in a `main function`.
+- Do not call/execute the `main function` in your script when using the checker.
 - Every view must **clearly guide the user** with prompts and instructions.
 - After each action (add/edit/delete/view), return to the **main menu**.
 - Inputs must always prompt with descriptive text (e.g. `"Enter Last Name:"`).
